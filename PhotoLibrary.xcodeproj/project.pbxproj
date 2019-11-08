@@ -66,20 +66,28 @@
 		57588E8923754E6100E9931A /* PhotoLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				57588E8A23754E6100E9931A /* AppDelegate.swift */,
-				57588E8C23754E6100E9931A /* SceneDelegate.swift */,
 				57588E8E23754E6100E9931A /* PhotoCollectionViewController.swift */,
 				57588E9E23755ED400E9931A /* PhotoCollectionViewCell.swift */,
 				57588EA023755EEC00E9931A /* PhotoDetailViewController.swift */,
-				57588EA223755F0800E9931A /* AssetTableViewController.swift */,
-				57588EA423755F1D00E9931A /* AssetCollectionViewController.swift */,
-				57588EA623755F3300E9931A /* AssetCollectionViewCell.swift */,
+				57588EA8237560D700E9931A /* Asset Picker */,
+				57588E8A23754E6100E9931A /* AppDelegate.swift */,
+				57588E8C23754E6100E9931A /* SceneDelegate.swift */,
 				57588E9023754E6200E9931A /* Main.storyboard */,
 				57588E9323754E6500E9931A /* Assets.xcassets */,
 				57588E9523754E6500E9931A /* LaunchScreen.storyboard */,
 				57588E9823754E6500E9931A /* Info.plist */,
 			);
 			path = PhotoLibrary;
+			sourceTree = "<group>";
+		};
+		57588EA8237560D700E9931A /* Asset Picker */ = {
+			isa = PBXGroup;
+			children = (
+				57588EA223755F0800E9931A /* AssetTableViewController.swift */,
+				57588EA423755F1D00E9931A /* AssetCollectionViewController.swift */,
+				57588EA623755F3300E9931A /* AssetCollectionViewCell.swift */,
+			);
+			path = "Asset Picker";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
