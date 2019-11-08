@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PhotoCollectionViewController.swift
 //  PhotoLibrary
 //
 //  Created by hongjuyeon_dev on 2019/11/08.

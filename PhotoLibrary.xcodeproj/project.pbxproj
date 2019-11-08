@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		57588E8B23754E6100E9931A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57588E8A23754E6100E9931A /* AppDelegate.swift */; };
 		57588E8D23754E6100E9931A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57588E8C23754E6100E9931A /* SceneDelegate.swift */; };
-		57588E8F23754E6100E9931A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57588E8E23754E6100E9931A /* ViewController.swift */; };
+		57588E8F23754E6100E9931A /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57588E8E23754E6100E9931A /* PhotoCollectionViewController.swift */; };
 		57588E9223754E6200E9931A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57588E9023754E6200E9931A /* Main.storyboard */; };
 		57588E9423754E6500E9931A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57588E9323754E6500E9931A /* Assets.xcassets */; };
 		57588E9723754E6500E9931A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57588E9523754E6500E9931A /* LaunchScreen.storyboard */; };
+		57588E9F23755ED400E9931A /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57588E9E23755ED400E9931A /* PhotoCollectionViewCell.swift */; };
+		57588EA123755EEC00E9931A /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57588EA023755EEC00E9931A /* PhotoDetailViewController.swift */; };
+		57588EA323755F0800E9931A /* AssetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57588EA223755F0800E9931A /* AssetTableViewController.swift */; };
+		57588EA523755F1D00E9931A /* AssetCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57588EA423755F1D00E9931A /* AssetCollectionViewController.swift */; };
+		57588EA723755F3300E9931A /* AssetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57588EA623755F3300E9931A /* AssetCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		57588E8723754E6100E9931A /* PhotoLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57588E8A23754E6100E9931A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57588E8C23754E6100E9931A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		57588E8E23754E6100E9931A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		57588E8E23754E6100E9931A /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		57588E9123754E6200E9931A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57588E9323754E6500E9931A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57588E9623754E6500E9931A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57588E9823754E6500E9931A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57588E9E23755ED400E9931A /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		57588EA023755EEC00E9931A /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		57588EA223755F0800E9931A /* AssetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTableViewController.swift; sourceTree = "<group>"; };
+		57588EA423755F1D00E9931A /* AssetCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCollectionViewController.swift; sourceTree = "<group>"; };
+		57588EA623755F3300E9931A /* AssetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +68,12 @@
 			children = (
 				57588E8A23754E6100E9931A /* AppDelegate.swift */,
 				57588E8C23754E6100E9931A /* SceneDelegate.swift */,
-				57588E8E23754E6100E9931A /* ViewController.swift */,
+				57588E8E23754E6100E9931A /* PhotoCollectionViewController.swift */,
+				57588E9E23755ED400E9931A /* PhotoCollectionViewCell.swift */,
+				57588EA023755EEC00E9931A /* PhotoDetailViewController.swift */,
+				57588EA223755F0800E9931A /* AssetTableViewController.swift */,
+				57588EA423755F1D00E9931A /* AssetCollectionViewController.swift */,
+				57588EA623755F3300E9931A /* AssetCollectionViewCell.swift */,
 				57588E9023754E6200E9931A /* Main.storyboard */,
 				57588E9323754E6500E9931A /* Assets.xcassets */,
 				57588E9523754E6500E9931A /* LaunchScreen.storyboard */,
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57588E8F23754E6100E9931A /* ViewController.swift in Sources */,
+				57588EA523755F1D00E9931A /* AssetCollectionViewController.swift in Sources */,
+				57588E8F23754E6100E9931A /* PhotoCollectionViewController.swift in Sources */,
+				57588E9F23755ED400E9931A /* PhotoCollectionViewCell.swift in Sources */,
 				57588E8B23754E6100E9931A /* AppDelegate.swift in Sources */,
+				57588EA123755EEC00E9931A /* PhotoDetailViewController.swift in Sources */,
+				57588EA323755F0800E9931A /* AssetTableViewController.swift in Sources */,
 				57588E8D23754E6100E9931A /* SceneDelegate.swift in Sources */,
+				57588EA723755F3300E9931A /* AssetCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
