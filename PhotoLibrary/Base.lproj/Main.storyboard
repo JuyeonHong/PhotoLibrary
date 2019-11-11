@@ -59,7 +59,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Photos" id="zSb-yJ-zFH">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="okF-Fy-Yvy"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="okF-Fy-Yvy">
+                            <connections>
+                                <action selector="addPhotoAsset:" destination="BYZ-38-t0r" id="obu-Ff-8Oq"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -113,7 +117,7 @@
         <!--Select An Album-->
         <scene sceneID="Mj9-lX-Sgk">
             <objects>
-                <viewController id="Cth-b5-LVs" customClass="AssetTableViewController" customModule="PhotoLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AlbumTableVC" id="Cth-b5-LVs" customClass="AlbumTableViewController" customModule="PhotoLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gyb-R3-Dd4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
