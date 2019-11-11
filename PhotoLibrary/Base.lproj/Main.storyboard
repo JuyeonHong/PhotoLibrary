@@ -126,18 +126,36 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlbumsCell" id="LS0-SJ-hk8">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AlbumsCell" rowHeight="60" id="LS0-SJ-hk8" customClass="AlbumTableViewCell" customModule="PhotoLibrary" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LS0-SJ-hk8" id="blo-Ax-D24">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDh-xn-agh">
+                                                    <rect key="frame" x="25" y="19.5" width="333" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mDh-xn-agh" firstAttribute="leading" secondItem="blo-Ax-D24" secondAttribute="leading" constant="25" id="DmO-24-uCo"/>
+                                                <constraint firstItem="mDh-xn-agh" firstAttribute="centerY" secondItem="blo-Ax-D24" secondAttribute="centerY" id="HRV-7Y-rAC"/>
+                                                <constraint firstItem="mDh-xn-agh" firstAttribute="centerX" secondItem="blo-Ax-D24" secondAttribute="centerX" id="W0P-j9-MXK"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="titleLabel" destination="mDh-xn-agh" id="FDI-Xz-Xbj"/>
                                             <segue destination="Zf2-j8-ura" kind="show" id="Vos-of-TYm"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Cth-b5-LVs" id="m1B-dN-yps"/>
+                                    <outlet property="delegate" destination="Cth-b5-LVs" id="pOW-w5-7e7"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -152,10 +170,13 @@
                     <navigationItem key="navigationItem" title="Select An Album" id="y0v-j8-dD7">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="o95-SI-deM"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="1Dw-pU-aGJ" id="IRS-Le-WNL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bGn-cG-YZX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048" y="811"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="810.9375"/>
         </scene>
         <!--Asset Collection View Controller-->
         <scene sceneID="tSO-i5-hoO">
@@ -217,7 +238,7 @@
         <!--Navigation Controller-->
         <scene sceneID="dSh-4G-aAR">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PXm-Mj-6dY" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="AlbumsStoryboard" automaticallyAdjustsScrollViewInsets="NO" id="PXm-Mj-6dY" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L3q-0h-YNV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
