@@ -44,6 +44,36 @@ class AlbumTableViewController: UIViewController {
         
     }
     
+    // MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as? AssetCollectionViewController
+        destination?.selectedAssets = selectedAssets
+        
+        if let cell = sender as? AlbumTableViewCell {
+            destination?.title = cell.title
+            
+            let options = PHFetchOptions()
+            options.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
+            
+            if let indexPath = tableView.indexPath(for: cell) {
+                switch indexPath.section {
+                // userLibrary
+                case 0:
+                    let library = userLibrary?[indexPath.row]
+                    destination?.assetsFetchResults = PHAsset.fetchAssets(in: library!, options: options) as? PHFetchResult<AnyObject>
+                    
+                // userAlbums
+                case 1:
+                    let albums = userAlbums?[indexPath.row] as? PHAssetCollection
+                    destination?.assetsFetchResults = PHAsset.fetchAssets(in: albums!, options: options) as? PHFetchResult<AnyObject>
+                    
+                default:
+                    break
+                }
+            }
+        }
+    }
+    
 }
 
 extension AlbumTableViewController: UITableViewDataSource, UITableViewDelegate {

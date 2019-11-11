@@ -22,6 +22,7 @@ class PhotoCollectionViewController: UIViewController {
         alert.addAction(UIAlertAction.init(title: "Photo Library", style: .default, handler: { _ in
             let navigationController = self.storyboard?.instantiateViewController(identifier: "AlbumsStoryboard") as? UINavigationController
             if let vc = navigationController {
+                vc.modalPresentationStyle = .fullScreen
                 self.present(vc, animated: true, completion: nil)
             }
         }))
