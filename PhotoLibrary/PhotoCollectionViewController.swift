@@ -18,9 +18,12 @@ class PhotoCollectionViewController: UIViewController {
 
     @IBAction func addPhotoAsset(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "Get Photo From", message: nil, preferredStyle: .actionSheet)
+        
         alert.addAction(UIAlertAction.init(title: "Photo Library", style: .default, handler: { _ in
-            let vc = AlbumTableViewController.create()
-            self.present(vc, animated: true, completion: nil)
+            let navigationController = self.storyboard?.instantiateViewController(identifier: "AlbumsStoryboard") as? UINavigationController
+            if let vc = navigationController {
+                self.present(vc, animated: true, completion: nil)
+            }
         }))
         alert.addAction(UIAlertAction.init(title: "cancel", style: .destructive, handler: nil))
         
