@@ -26,10 +26,10 @@ class CheckMark: UIView{
         let frame = bounds
         
         // Subframes
-        let group = CGRect(x: frame.minX + 3, y: frame.minY + 3, width: frame.width - 6, height: frame.height + 6)
+        let group = CGRect(x: frame.minX + 3, y: frame.minY + 3, width: frame.width - 6, height: frame.height - 6)
         
         // CheckedOval Drawing (blue circle)
-        let checkedOvalPath = UIBezierPath(ovalIn: CGRect(x: group.minX + 0.5, y: group.minY + 0.5, width: group.width + 1, height: group.height + 1))
+        let checkedOvalPath = UIBezierPath(ovalIn:CGRect(x: group.minX + 0.5, y: group.minY + 0.5, width: group.width + 1, height: group.height + 1))
         context?.saveGState()
         context?.setShadow(offset: CGSize(width: 0.1, height: -0.1), blur: CGFloat(2.5), color: UIColor.black.cgColor)
         checkMarkBlue.setFill()
