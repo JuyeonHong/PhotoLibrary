@@ -10,7 +10,7 @@ import UIKit
 
 class AssetCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var checkMark: UIView!
+    @IBOutlet private var checkMark: UIView?
     
     var representedAssetIdentifier: String?
     var thumbnailImage: UIImage? {
@@ -21,7 +21,7 @@ class AssetCollectionViewCell: UICollectionViewCell {
     
     override var isSelected: Bool {
         didSet {
-            checkMark.isHidden = !isSelected
+            checkMark?.isHidden = !isSelected
         }
     }
     
