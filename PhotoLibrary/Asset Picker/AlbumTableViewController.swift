@@ -74,6 +74,9 @@ class AlbumTableViewController: UIViewController {
         }
     }
     
+    @IBAction func cancelBtnClick(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 extension AlbumTableViewController: UITableViewDataSource, UITableViewDelegate {
