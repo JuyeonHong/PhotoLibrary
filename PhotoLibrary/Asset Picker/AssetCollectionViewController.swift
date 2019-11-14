@@ -15,6 +15,7 @@ class AssetCollectionViewController: UIViewController {
     
     var selectedAssets: SelectedAssets?
     var assetsFetchResults: PHFetchResult<AnyObject>?
+    var assetPikcerDelegate: AssetPickerDelegate?
     
     private var thumbnailSize = CGSize.zero
     private let imageManager = PHImageManager()
@@ -50,7 +51,9 @@ class AssetCollectionViewController: UIViewController {
     }
     
     @objc func donePressed(_ sender: UIBarButtonItem) {
-        // delegate that asset picker finish select picking assets
+        if let assets = selectedAssets?.assets {
+            assetPikcerDelegate?.assetPickerDidFinishPickingAssets(assets)
+        }
     }
     
 }

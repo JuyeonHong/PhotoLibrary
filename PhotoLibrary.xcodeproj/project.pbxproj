@@ -21,6 +21,7 @@
 		57588EA323755F0800E9931A /* AlbumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57588EA223755F0800E9931A /* AlbumTableViewController.swift */; };
 		57588EA523755F1D00E9931A /* AssetCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57588EA423755F1D00E9931A /* AssetCollectionViewController.swift */; };
 		57588EA723755F3300E9931A /* AssetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57588EA623755F3300E9931A /* AssetCollectionViewCell.swift */; };
+		57F62AD9237CDF610029BC69 /* AssetPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F62AD8237CDF610029BC69 /* AssetPickerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		57588EA223755F0800E9931A /* AlbumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewController.swift; sourceTree = "<group>"; };
 		57588EA423755F1D00E9931A /* AssetCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCollectionViewController.swift; sourceTree = "<group>"; };
 		57588EA623755F3300E9931A /* AssetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCollectionViewCell.swift; sourceTree = "<group>"; };
+		57F62AD8237CDF610029BC69 /* AssetPickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPickerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				57588EA623755F3300E9931A /* AssetCollectionViewCell.swift */,
 				5724FF742379381A00B32572 /* CheckMark.swift */,
 				5724FF6E2378E50600B32572 /* SelectedAssets.swift */,
+				57F62AD8237CDF610029BC69 /* AssetPickerDelegate.swift */,
 			);
 			path = "Asset Picker";
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				57588EA323755F0800E9931A /* AlbumTableViewController.swift in Sources */,
 				57588E8D23754E6100E9931A /* SceneDelegate.swift in Sources */,
 				5724FF752379381A00B32572 /* CheckMark.swift in Sources */,
+				57F62AD9237CDF610029BC69 /* AssetPickerDelegate.swift in Sources */,
 				5724FF6F2378E50600B32572 /* SelectedAssets.swift in Sources */,
 				57588EA723755F3300E9931A /* AssetCollectionViewCell.swift in Sources */,
 			);

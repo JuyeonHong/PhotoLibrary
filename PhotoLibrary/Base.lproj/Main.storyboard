@@ -47,6 +47,10 @@
                                         <size key="customSize" width="80" height="71"/>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="bWi-uu-Cz0"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vB4-EP-etk"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

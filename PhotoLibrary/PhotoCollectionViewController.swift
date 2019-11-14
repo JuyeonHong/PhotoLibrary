@@ -33,3 +33,18 @@ class PhotoCollectionViewController: UIViewController {
     
 }
 
+extension PhotoCollectionViewController: AssetPickerDelegate {
+    func assetPickerDidFinishPickingAssets(_ selectedAssets: [PHAsset]) {
+        <#code#>
+    }
+}
+
+extension PhotoCollectionViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
+}
