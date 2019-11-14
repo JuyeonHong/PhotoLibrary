@@ -45,6 +45,9 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="80" height="71"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="ifP-Cn-FcA" id="z2z-c5-gwL"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -69,6 +72,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="UXM-6S-vGD" id="yX1-Mo-pqO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

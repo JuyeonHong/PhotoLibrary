@@ -20,6 +20,8 @@ class AlbumTableViewController: UIViewController {
     var selectedAssets: SelectedAssets?
     private var userLibrary: PHFetchResult<PHAssetCollection>?
     private var userAlbums: PHFetchResult<PHCollection>?
+
+    var assetPickerDelegate: AssetPickerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +50,7 @@ class AlbumTableViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as? AssetCollectionViewController
         destination?.selectedAssets = selectedAssets
+        destination?.assetPickerDelegate = self
         
         if let cell = sender as? AlbumTableViewCell {
             destination?.title = cell.title
@@ -76,6 +79,15 @@ class AlbumTableViewController: UIViewController {
     
     @IBAction func cancelBtnClick(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
+    }
+}
+
+extension AlbumTableViewController: AssetPickerDelegate {
+    func assetPickerDidFinishPickingAssets(_ selectedAssets: [PHAsset]) {
+        assetPickerDelegate?.assetPickerDidFinishPickingAssets(selectedAssets)
+        // Clear out selections
+        self.selectedAssets?.assets.removeAll()
+        self.dismiss(animated: true, completion: nil)
     }
 }
 
