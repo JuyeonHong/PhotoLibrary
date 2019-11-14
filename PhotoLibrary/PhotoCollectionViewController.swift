@@ -71,4 +71,14 @@ extension PhotoCollectionViewController: UICollectionViewDataSource, UICollectio
         
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let photo = PhotoManager.shared.photos
+        let asset = photo[indexPath.row]
+        
+        if let vc = storyboard?.instantiateViewController(identifier: "PhotoDetailStoryboard") as? PhotoDetailViewController {
+            vc.image = asset.thumbnailImage
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }

@@ -10,21 +10,20 @@ import UIKit
 
 class PhotoDetailViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    var image: UIImage!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        assert(imageView != nil, "Image not set !")
+        imageView.image = image
+        
+        // Resize if neccessary to ensure it's not pixelated
+        if image.size.height <= imageView.bounds.size.height &&
+            image.size.width <= imageView.bounds.size.width {
+          imageView.contentMode = .center
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

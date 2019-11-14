@@ -83,7 +83,7 @@
         <!--Photo Detail View Controller-->
         <scene sceneID="FOT-3n-WBw">
             <objects>
-                <viewController id="RTB-0u-jmI" customClass="PhotoDetailViewController" customModule="PhotoLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhotoDetailStoryboard" id="RTB-0u-jmI" customClass="PhotoDetailViewController" customModule="PhotoLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yNx-KH-tHK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,6 +101,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uK3-Rw-nYc"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="fiW-TH-aA9" id="9X1-MJ-8e4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="658-qk-lbM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
