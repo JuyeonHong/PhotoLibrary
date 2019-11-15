@@ -13,7 +13,6 @@ class PhotoDetailViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     var image: UIImage!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         assert(imageView != nil, "Image not set !")
@@ -21,7 +20,7 @@ class PhotoDetailViewController: UIViewController {
         
         // Resize if neccessary to ensure it's not pixelated
         if image.size.height <= imageView.bounds.size.height &&
-            image.size.width <= imageView.bounds.size.width {
+          image.size.width <= imageView.bounds.size.width {
           imageView.contentMode = .center
         }
     }
